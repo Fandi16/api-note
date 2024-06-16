@@ -2,7 +2,8 @@ const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('note_todo_db', 'root', '', {
   host: 'localhost',
-  dialect: 'mysql'
+  dialect: 'mysql',
+  logging: false,
 });
 
 sequelize.authenticate()
